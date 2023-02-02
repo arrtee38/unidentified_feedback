@@ -32,3 +32,9 @@
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+# Ignore Twitter Auth Helper script
+/twitter_auth_helper/
+
+# Ignore application configuration
+/config/application.yml
