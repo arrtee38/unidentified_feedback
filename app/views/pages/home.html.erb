@@ -14,13 +14,13 @@
       <label for="feedback_recipient" class="block text-sm font-medium text-gray-700">Company Twitter Handle</label>
       <div class="mt-1 flex rounded-md shadow-sm">
         <span class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm">@</span>
-        <input type="text" name="feedback[recipient_handle]" id="feedback_recipient_handle" class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 px-3 py-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="arrtee_Dev">
+        <input type="text" required name="feedback[recipient_handle]" id="feedback_recipient_handle" class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 px-3 py-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="arrtee_Dev">
       </div>
     </div>
 
     <%# <label for="comment" class="block text-sm font-medium text-gray-700">Add your comment</label> %>
     <div class="mt-2">
-      <textarea rows="4" name="feedback[text]" id="text" placeholder="I love this tool because..." class="p-4 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+      <textarea rows="4" required maxlength="250" name="feedback[text]" id="text" placeholder="I love this tool because..." class="p-4 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
     </div>
     <div>
       <p class="text-right sm:text-sm"><span id="char_counter">0</span> / 250</p>
